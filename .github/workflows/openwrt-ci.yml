@@ -102,9 +102,9 @@ jobs:
 
           # 编译x64固件:
           cat >> .config <<EOF
-          CONFIG_TARGET_MediaTek_Ralink_MIPS=y
-          CONFIG_TARGET_MT7620_based_boards=y
-          CONFIG_TARGET_Lenovo_Y1=y
+          CONFIG_TARGET_ar71xx=y
+          CONFIG_TARGET_ar71xx_nand=y
+          CONFIG_TARGET_ar71xx_nand_DEVICE_WNDR4300V1=y
           EOF
 
           # 固件压缩:
