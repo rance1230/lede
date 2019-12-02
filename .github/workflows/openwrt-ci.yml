@@ -102,9 +102,9 @@ jobs:
 
           # 编译x64固件:
           cat >> .config <<EOF
-          CONFIG_TARGET_Atheros_AR7xxx/AR9xxx=y
-          CONFIG_TARGET_Generic_devices_with_NAND_flash=y
-          CONFIG_TARGET_NETGEAR_WNDR4300v1=y
+          CONFIG_TARGET_x86=y
+          CONFIG_TARGET_x86_64=y
+          CONFIG_TARGET_x86_64_Generic=y
           EOF
 
           # 固件压缩:
